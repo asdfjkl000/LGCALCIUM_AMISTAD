@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Page</title>
+</head>
+<body>
+    <img id="image" src="image 1.webp">
+    <button onclick="changeImage()">Change This!</button>
+    <button onclick="revertImage()">Revert This!</button>   
+    <script>
+        function changeImage(){
+            document.getElementById("image").src = "image2.jpg";
+        }
+        function revertImage(){
+            document.getElementById("image").src = "image 1.webp";
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        #image{
+            width: 35vw;
+            height: 35vw;
+        }
+        button{
+            padding: 1vw;
+            position:relative;
+            margin-top: 10vh;
+            color: rgb(65, 65, 170);
+            background-color:blanchedalmond;
+            font-family: 'Poppins', 'sans serif';
+            font-weight: 800;
+        }
+        button:hover{
+            background-color: rgb(61, 7, 112);
+        }
+
+    </style> 
+</body>
+</html>
